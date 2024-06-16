@@ -1,0 +1,100 @@
+/* public/style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 600px;  /* Increased width */
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+#task-form {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#task-input {
+    flex: 1;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 15px;
+    border: none;
+    background: #5cb85c;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #4cae4c;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+li span.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+button.delete, button.edit {
+    background: #d9534f;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button.delete:hover, button.edit:hover {
+    background: #c9302c;
+}
+
+button.edit {
+    background: #f0ad4e;
+    margin-right: 5px;  /* Reduced margin to bring buttons closer */
+}
+
+button.edit:hover {
+    background: #ec971f;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 10px;
+}
